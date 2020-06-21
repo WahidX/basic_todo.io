@@ -1,54 +1,116 @@
-
+body *{
+    font-family: sans-serif;
+}
 textarea{
-    width: 80% ; 
-    height : 30px;
+    width: 90% ; 
+    height : auto;
+    border-radius: 10px;
+    font-size: 1.5rem;
 }
 
 #app-container{
     justify-content: center;
-    width: 70%;
+    background-color: lightblue;
+    justify-content: center;
+    width: 500px;
+    min-width: 30%;
     height: auto;
-    border: 2px solid red;
+    margin: 0 auto;
+    padding-top: 15px;
+    border: 2px solid blue;
+    border-radius: 10px;
 }
 
 #add-bar{
-    height: auto;
-    position: relative;
-    border: 2px solid;
+    width: 100%;
+    margin: 15px;
+    border-radius: 10px;
 }
 
 #add-bar *{
+    align-content: center;
+    height: auto;
+    width: auto;
     color: blue;
     vertical-align: middle;
 }
-
 
 
 .fas{
     font-size: 25px;
 }
 
-#task-container{
-    border: 2px solid blue;
+#note-container{
+    margin: 10px;
+    font-weight: 600;
 }
 
 #clear-btn {
-    margin: 5px;
+    padding-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
-input{
+#clear-btn button{
+    background-color: lightcoral;
+}
+
+footer input{
     visibility: hidden;
 }
 
 footer{
+    font-size: 10px;
+    height: auto;
     font-weight: lighter;
-    margin: 5px;
+    margin: 15px;
+    padding-bottom: 10px;
 }
 
 footer *{
+    overflow: auto;
     display: inline-block;
+    font-weight: lighter;
 }
 
 #viewtoggles{
     float: right;
+}
+
+#extra-tools{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#extra-tools button{
+    background-color: beige
+}
+
+#clear-completed{
+    float: right;
+    font-weight: lighter;
+}
+
+
+button{
+    border-radius: 10px;
+    margin: 2px;
+}
+
+
+.note{
+    overflow: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.note button{
+    float: right;
+}
+
+.note button {
+    background-color: lightcoral;
 }

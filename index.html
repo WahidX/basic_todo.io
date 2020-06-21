@@ -6,26 +6,28 @@
         <link rel="stylesheet" type="text/css" href="index.css"> 
     </head>
     <body>
-        <header><center>Welcome</center></header>
+        
         <div id="app-container">
             <div id="add-bar">
-                <button type="submit">
+                <button id="add" type="submit">
                     <i class="fas fa-plus"></i>
                 </button>
-                <textarea></textarea>
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
+                <textarea id="input" name="input" placeholder="Enter here..."></textarea>
             </div>
-            <div id="task-container">
-                <div class="incomplete">
-                    <p>task1</p>
-                    <p>task2</p>
+            <div id="extra-tools">
+                <button id="completeAll" onclick="completeAll()">Complete all tasks</button>
+                <button id="clear-completed" onclick="clearCompleted()">Clear completed</button>
+            </div>
+            <div id="note-container">
+    
+<!--
+                <div class="note">
+                    <input type="checkbox" onclick="checkClicked(this)" id="1" class="note-input">
+                    <label for="1">task1</label>
+                    <button onclick="deleteNote(this)"><i class="fas fa-times"></i></button>
                 </div>
-                <div class="completed">
-                    <p>comp t1</p>
-                    <p>comp t2</p>
-                </div>
+-->
+            
             </div>
             <div id="clear-btn">
                 <button>Clear All</button>
@@ -33,15 +35,18 @@
             <footer>
                 <div id="incomplete-count">count</div>
                 <div id="viewtoggles">
-                    <input type="radio" id="all" name="view-mode" value="all">
-                    <label for="all">All</label>
+                    <input type="radio" id="all" name="view-mode" value="all" checked>
+                    <label for="all" onclick=toggleCheck(this)>All</label>
+                    
                     <input type="radio" id="incomplete" name="view-mode" value="incomplete">
-                    <label for="incomplete">incomplete</label>
-                    <input type="radio" id="completed" name="view-mode" value="completed">
-                    <label for="completed">completed</label>
+                    <label for="incomplete" onclick=toggleCheck(this)>Incomplete</label>
+                    
+                    <input type="radio" id="complete" name="view-mode" value="complete">
+                    <label for="complete" onclick=toggleCheck(this)>Complete</label>
                 </div>
             </footer>
         </div>
+            
         
         <script src="index.js"></script>
     </body>
