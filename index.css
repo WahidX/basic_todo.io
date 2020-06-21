@@ -1,0 +1,54 @@
+
+textarea{
+    width: 80% ; 
+    height : 30px;
+}
+
+#app-container{
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    border: 2px solid red;
+}
+
+#add-bar{
+    height: auto;
+    position: relative;
+    border: 2px solid;
+}
+
+#add-bar *{
+    color: blue;
+    vertical-align: middle;
+}
+
+
+
+.fas{
+    font-size: 25px;
+}
+
+#task-container{
+    border: 2px solid blue;
+}
+
+#clear-btn {
+    margin: 5px;
+}
+
+input{
+    visibility: hidden;
+}
+
+footer{
+    font-weight: lighter;
+    margin: 5px;
+}
+
+footer *{
+    display: inline-block;
+}
+
+#viewtoggles{
+    float: right;
+}
