@@ -54,8 +54,9 @@ function checkClicked(ele){
 }
 
 function deleteNote(ele){
+    if(ele.parentNode.childNodes[0].checked != true)
+        updateCount(--count);
     ele.parentElement.remove();
-    updateCount(--count);
 }
 
 function updateCount(count){
