@@ -34,7 +34,7 @@ function addNote(){
     }
     const noteDiv = document.createElement("div");
     noteDiv.classList.add("note");
-    noteDiv.innerHTML = "<input type=\"checkbox\" id="+index+" class=\"note-input\" onclick=\"checkClicked(this)\"><label for="+ index +">"+ inputText.value +"</label><button onclick=\"deleteNote(this)\"><i class=\"fas fa-times\"></i></button>";
+    noteDiv.innerHTML = "<input type=\"checkbox\" id="+index+" class=\"note-input\" onclick=\"checkClicked(this)\"><label for="+ index +">"+ inputText.value.trim() +"</label><button onclick=\"deleteNote(this)\"><i class=\"fas fa-times\"></i></button>";
         
     noteContainer.appendChild(noteDiv);
     index++;
