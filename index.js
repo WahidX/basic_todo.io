@@ -28,7 +28,7 @@ function clearAll(){
 
 
 function addNote(){
-     if (inputText.value.trim == ""){
+     if (inputText.value.trim){
         window.alert("Nothing is typed");
         return;
     }
